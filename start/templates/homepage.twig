@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- templates/homepage.twig -->
+<html>
+    <head>
+
+    </head>
+    <body>
+        {# TWIG Tip(TT): This is how we make a comment here // Explain(XPL): everything in the loop is repeated html included #}
+        {# 2 other syntaxes among comment:
+            {{ }} => SAY SOMETHING
+            {% %} => DO SOMETHING
+         #}
+        <h1>{{ pageTitle }}</h1>
+        <div class="block__rows">
+            <div class="block__row">
+                {% for product in products %}
+                    {% if loop.first %}
+                    <div class="blocks__row__product blocks__row__product--first span4">
+                    {% elseif loop.last %}
+                    <div class="blocks__row__product blocks__row__product--last span4">
+                    {% else %}
+                    <div class="blocks__row__product span4">
+                    {% endif %}
+                        <h2>{{ product }}</h2>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="blocks__row">
+                {% for product in products %}
+                    <div class="blocks__row__product span4">
+                        <h2>{{ product }}</h2>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>
