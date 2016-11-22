@@ -3,7 +3,7 @@
 require __DIR__.'/src/Product.php';
 
 // setup some variables
-$pageTitle = 'Suit Up!';
+$pageTitle = 'My first Pinguins twig app (i will change that, i hate pinguins they are the ocean\'s sheeps :p)';
 $products = array(
     new Product('Serious Businessman', 'formal.png'),
     new Product('Penguin Dress', 'dress.png'),

@@ -32,14 +32,14 @@ switch ($uri) {
     // The Homepage! (/)
     case '/':
         echo $twig->render('homepage.twig', array(
-            'pageTitle' => 'Suit Up!',
+            'pageTitle' => 'Learning Twig with PHP',
             'products' => array(
-                'Serious Businessman',
-                'Penguin Dress',
-                'Sportstar Penguin',
+                'Serious Dude',
+                'Penguin carpet',
+                'CR7',
                 'Angel Costume',
-                'Penguin Accessories',
-                'Super Cool Penguin',
+                'WTF Penguin Accessories',
+                'Badass Penguin',
             ),
         ));
 
